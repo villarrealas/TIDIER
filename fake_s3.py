@@ -1,4 +1,4 @@
-# Maddie currently assumes the existence of an S3 bucket we have access to,
+# TIDIER currently assumes the existence of an S3 bucket we have access to,
 # which is inconvenient for testing.
 # Since it's too annoying to go through changing references to s3 specific methods right now,
 # we're just gonna fake it out.
@@ -11,7 +11,7 @@ import os
 class FakeS3Client:
     def __init__(self):
         # This needs to end with `/`.
-        self._top_dir = "/tmp/maddie/"
+        self._top_dir = "/tmp/TIDIER/"
 
 def get_s3_client():
     return FakeS3Client()
