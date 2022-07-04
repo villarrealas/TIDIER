@@ -49,10 +49,6 @@ def get_playbook_field(command, lang):
     if command.startswith(moves):
         return 'basic'
 
-    adult = get_translation(lang, 'moves.adult')
-    if command.startswith(adult):
-        return 'adult'
-
     return ''
 
 
