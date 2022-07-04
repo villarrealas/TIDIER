@@ -10,7 +10,7 @@ from playbook_interactions import get_character, get_character_ctx
 from constants import LABELS, CONDITIONS, VALUE, dice, modifier_emojis
 
 ##Setup the big sub
-def mad_parse(message):
+def tidier_parse(message):
     msg = message.content
     user = message.author.display_name
     blob = ""
@@ -144,7 +144,7 @@ def get_modifier_from_character(labels, conditions, label, condition, user, lang
 
         return (mod + conditions_count, character_condition, character_label)
 
-    if label not in ['adult', 'basic', 'flat']:
+    if label not in ['basic', 'flat']:
         mod += labels[label][VALUE]
         character_label = get_translation(lang, 'dice_rolling.label')(label.title(), labels[label][VALUE])
     return (mod, character_condition, character_label)
