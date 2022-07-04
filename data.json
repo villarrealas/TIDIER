@@ -1,44 +1,99 @@
 {
 	"moves": [{
 		"id": 1,
-		"shortName": "engage",
-		"capital": "DIRECTLY ENGAGE A THREAT",
-		"phrase": "directly engages a threat!",
-		"blob": "When you *directly engage a threat*, roll + Danger.\nOn a hit, trade blows. On a _10+_, pick two. On a _7-9_,\npick one.\n• resist or avoid their blows\n• take something from them\n• create an opportunity for your allies\n• impress, surprise, or frighten the opposition",
-		"label": "danger",
+		"shortName": "dfight",
+		"capital": "FIGHT",
+		"phrase": "seeks to incapacitate someone!",
+		"blob": "When you *seek to incapacitate someone* with violence, roll +Daring or +Grace. \nOn a _10+_, choose 3 and your opponent chooses 1 to apply to you in response.\n On a _7-9_, choose 2 and your opponent chooses 1.\n • Flirt with or provoke your opponent and gain a String on them.\n• Through violence or cutting words, inflict a Condition\n• Create an opportunity for an ally through prowess or distraction\n• Take an object from your opponent or seize a superior position.",
+		"label": "daring",
 		"description": " ",
 		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
 		"requiresRolling": true,
 		"playbook": "basic"
 	}, {
 		"id": 2,
-		"shortName": "unleash",
-		"capital": "UNLEASH YOUR POWERS",
-		"phrase": "unleashes their powers!",
-		"blob": "When you *unleash your powers* to overcome an obstacle, reshape your environment, or extend your senses, roll + Freak.\nOn a hit, you do it. On a _7-9_, mark a condition or the GM will tell you how the effect is unstable or temporary.",
-		"label": "freak",
+		"shortName": "gfight",
+		"capital": "FIGHT",
+		"phrase": "seeks to incapacitate someone!",
+		"blob": "*When you seek to incapacitate someone* with violence, roll +Daring or +Grace. \nOn a _10+_, choose 3 and your opponent chooses 1 to apply to you in response.\n On a _7-9_, choose 2 and your opponent chooses 1.\n • Flirt with or provoke your opponent and gain a String on them.\n• Through violence or cutting words, inflict a Condition\n• Create an opportunity for an ally through prowess or distraction\n• Take an object from your opponent or seize a superior position.",
+		"label": "daring",
 		"description": " ",
 		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
 		"requiresRolling": true,
 		"playbook": "basic"
 	}, {
 		"id": 3,
-		"shortName": "comfort",
-		"capital": "COMFORT OR SUPPORT",
-		"phrase": "comforts or supports!",
-		"blob": "When you *comfort or support someone*, roll + Mundane. \nOn a hit, they hear you: they mark potential, clear a condition, or shift Labels if they open up to you. On a _10+_, you can also add a Team to the pool or clear a condition yourself.",
-		"label": "mundane",
+		"shortName": "ddefy",
+		"capital": "DEFY DISASTER",
+		"phrase": "pushes their limits!",
+		"blob": "*When you push your limits* to achieve something extraordinary that's not covered by another move, or to avert an imminent danger to yourself or someone else, say what you're willing to sacrifice and pick your approach.:\n • Might, endurance, or courage. +Daring\n• Swiftness or elegance. +Grace\n• Charm or social insight. +Heart\n• Cleverness or knowledge. +Wit\n• Willpower or metaphysical skill.+Spirit\n On a _10+_, do it with style. At the GM's discretion, you may also learn new information, discover a new opportunity, or gain a String on someone.\n On a _7-9_, the GM will offer you a hard choice or success with a sacrifice.",
+		"label": "daring",
 		"description": " ",
 		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
 		"requiresRolling": true,
 		"playbook": "basic"
 	}, {
 		"id": 4,
-		"shortName": "pierce",
-		"capital": "PIERCE THE MASK",
-		"phrase": "pierces the mask!",
-		"blob": "When you *pierce someone’s mask* to see the person beneath, roll + Mundane. \nOn a _10+_, ask three. On a _7-9_, ask one.\n• what are you really planning?\n• what do you want me to do?\n• what do you intend to do?\n• how could I get your character to \\_\\_\\_?\n• how could I gain Influence over you?",
-		"label": "mundane",
+		"shortName": "gdefy",
+		"capital": "DEFY DISASTER",
+		"phrase": "pushes their limits!",
+		"blob": "*When you push your limits* to achieve something extraordinary that's not covered by another move, or to avert an imminent danger to yourself or someone else, say what you're willing to sacrifice and pick your approach.:\n • Might, endurance, or courage. +Daring\n• Swiftness or elegance. +Grace\n• Charm or social insight. +Heart\n• Cleverness or knowledge. +Wit\n• Willpower or metaphysical skill.+Spirit\n On a _10+_, do it with style. At the GM's discretion, you may also learn new information, discover a new opportunity, or gain a String on someone.\n On a _7-9_, the GM will offer you a hard choice or success with a sacrifice.",
+		"label": "grace",
+		"description": " ",
+		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
+		"requiresRolling": true,
+		"playbook": "basic"
+	}, {
+		"id": 5,
+		"shortName": "hdefy",
+		"capital": "DEFY DISASTER",
+		"phrase": "pushes their limits!",
+		"blob": "*When you push your limits* to achieve something extraordinary that's not covered by another move, or to avert an imminent danger to yourself or someone else, say what you're willing to sacrifice and pick your approach.:\n • Might, endurance, or courage. +Daring\n• Swiftness or elegance. +Grace\n• Charm or social insight. +Heart\n• Cleverness or knowledge. +Wit\n• Willpower or metaphysical skill.+Spirit\n On a _10+_, do it with style. At the GM's discretion, you may also learn new information, discover a new opportunity, or gain a String on someone.\n On a _7-9_, the GM will offer you a hard choice or success with a sacrifice.",
+		"label": "heart",
+		"description": " ",
+		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
+		"requiresRolling": true,
+		"playbook": "basic"
+	}, {
+		"id": 6,
+		"shortName": "wdefy",
+		"capital": "DEFY DISASTER",
+		"phrase": "pushes their limits!",
+		"blob": "*When you push your limits* to achieve something extraordinary that's not covered by another move, or to avert an imminent danger to yourself or someone else, say what you're willing to sacrifice and pick your approach.:\n • Might, endurance, or courage. +Daring\n• Swiftness or elegance. +Grace\n• Charm or social insight. +Heart\n• Cleverness or knowledge. +Wit\n• Willpower or metaphysical skill.+Spirit\n On a _10+_, do it with style. At the GM's discretion, you may also learn new information, discover a new opportunity, or gain a String on someone.\n On a _7-9_, the GM will offer you a hard choice or success with a sacrifice.",
+		"label": "wits",
+		"description": " ",
+		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
+		"requiresRolling": true,
+		"playbook": "basic"
+	}, {
+		"id": 7,
+		"shortName": "sdefy",
+		"capital": "DEFY DISASTER",
+		"phrase": "pushes their limits!",
+		"blob": "*When you push your limits* to achieve something extraordinary that's not covered by another move, or to avert an imminent danger to yourself or someone else, say what you're willing to sacrifice and pick your approach.:\n • Might, endurance, or courage. +Daring\n• Swiftness or elegance. +Grace\n• Charm or social insight. +Heart\n• Cleverness or knowledge. +Wit\n• Willpower or metaphysical skill.+Spirit\n On a _10+_, do it with style. At the GM's discretion, you may also learn new information, discover a new opportunity, or gain a String on someone.\n On a _7-9_, the GM will offer you a hard choice or success with a sacrifice.",
+		"label": "spirit",
+		"description": " ",
+		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
+		"requiresRolling": true,
+		"playbook": "basic"
+	}, {
+		"id": 8,
+		"shortName": "stagger",
+		"capital": "STAGGER",
+		"phrase": "suffers a staggering physical or emotional blow!",
+		"blob": "*When you suffer a staggering physical or emotional blow*, choose an option from the following based on the number of Conditions you have marked.\n *4-5 Conditions:*\n• You're rendered helpless for the scene.\n• You're utterly humiliated and news will spread; this could be a consequence of a setback in the confrontation, or might be caused by something you confess in the heat of the moment.\n• Choose 2 from the '0-3 Conditions' options.\n*0-3 Conditions:*\n• You lash out at someone whose regard matters to you: provoke them to do something foolish or harmful and take Advantage of a String on them if you have one\n• You hesitate or stumble and the opposition gains an opportunity.\n• You grin and bear the blow; mark Two Conditions",
+		"label": " ",
+		"description": " ",
+		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
+		"requiresRolling": false,
+		"playbook": "basic"
+	}, {
+		"id": 9,
+		"shortName": "entice",
+		"capital": "ENTICE",
+		"phrase": "appeals to someone's physical or emotional sensibilities!",
+		"blob": "*When you appeal to someone's physical or emotional sensibilities*, roll +Heart:\n On a _10+_, gain a String on them and they choose 1.\n On a _7-9_, gain a String on them, unless they decide instead to choose 1.\n• Get flustered and awkward.\n• Promise something they think you want.\n• Give on to desire",
+		"label": "heart",
 		"description": " ",
 		"img": "https://media.discordapp.net/attachments/696999351192518677/697498613479243846/unknown.png",
 		"requiresRolling": true,
@@ -859,18 +914,10 @@
 	"sources": [	{
 			"id": 1,
 			"source": "core",
-			"name": "Masks: A New Generation"
+			"name": "Thirsty Sword Lesbians"
 		}, {
 			"id": 2,
-			"source": "aegis",
-			"name": "Secrets of AEGIS"
-		}, {
-			"id": 3,
-			"source": "herald",
-			"name": "Halcyon City Herald Collection"
-		}, {
-			"id": 4,
-			"source": "unbound",
-			"name": "Unbound"
+			"source": "alnl",
+			"name": "Advanced Lovers and Lesbians"
 		}
 	]}
