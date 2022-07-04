@@ -52,8 +52,8 @@ async def editlabels(ctx, labelup: str, labeldown: str):
     #guild_ids=[696999350726819931],
     options=[
         create_option(name='condition', description="Condition", required=True, option_type=3, choices=[
-            create_choice(name="afraid", value="afraid"),
             create_choice(name="angry", value="angry"),
+			create_choice(name="frightened", value="frightened"),
             create_choice(name="guilty", value="guilty"),
             create_choice(name="hopeless", value="hopeless"),
             create_choice(name="insecure", value="insecure"),

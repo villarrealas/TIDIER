@@ -1,11 +1,7 @@
 en = {
   "embed_commands_dict": {
-    "mot": "mot",
-    "celebrate": "celebrate",
-    "triumph": "celebrate",
-    "weakness": "weakness",
-    "vulnerability": "weakness",
-    "weak": "weakness",
+    "truthheart": "truthheart",
+    "truthblade": "truthblade",
     "playbooks": "playbooks"
   },
   "generic_playbook_dict": {
@@ -172,16 +168,16 @@ en = {
     "soldier": "soldier"
   },
   "conditions": {
-    "afraid": "afraid",
     "angry": "angry",
+	"frightened": "frightened",
     "guilty": "guilty",
     "hopeless": "hopeless",
     "insecure": "insecure",
     "damaged": "damaged"
   },
   "inverted_conditions": {
-    "afraid": "afraid",
     "angry": "angry",
+	"frightened": "frightened",
     "guilty": "guilty",
     "hopeless": "hopeless",
     "insecure": "insecure",
