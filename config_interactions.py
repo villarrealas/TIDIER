@@ -8,7 +8,6 @@ LANGUAGE = 'language'
 GM = 'gm'
 TEAMNAME = 'teamname'
 CUSTOM_NAMES = 'customNames'
-TEAM = 'team'
 DICEDISPLAY = 'dicedisplay'
 
 # Aux functions
@@ -183,52 +182,6 @@ def get_language(message, _lang):
 def get_teamname(message, _lang):
     return get_field_from_config(message, TEAMNAME)
 
-#Team Pool Handling
-
-def add_team(message, _lang, action):
-    settings_key = get_settings_path(message)
-    s3_client = get_s3_client()
-    settings = info_from_s3(settings_key, s3_client)
-    if not settings:
-        return no_config_file()
-    lang = settings[LANGUAGE]
-    team = settings[TEAM]
-    if action == 'increase':
-        team = team + 1 #increment!
-    elif action == 'decrease':
-        if team > 0:
-            team = team - 1 #spend!
-        else: return get_translation(lang, 'configuration.insufficient_team')
-    elif action == 'empty':
-        team = 1
-    settings[TEAM] = team #update team
-    upload_to_s3(settings, settings_key, s3_client)
-    response = get_translation(lang, f'{CONFIGURATION}.team_pool')(team)
-    return response
-
-def team_slash(ctx, lang, action):
-    settings_key = get_settings_path_ctx(ctx)
-    s3_client = get_s3_client()
-    settings = info_from_s3(settings_key, s3_client)
-    if not settings:
-        create_settings_ctx(ctx)
-        settings = info_from_s3(settings_key, s3_client)
-        #return no_config_file()
-    lang = settings[LANGUAGE]
-    team = settings[TEAM]
-    if action == 'increase':
-        team = team + 1 #increment!
-    elif action == 'decrease':
-        if team > 0:
-            team = team - 1 #spend!
-        else: return get_translation(lang, 'configuration.insufficient_team')
-    elif action == 'empty':
-        team = 1
-    settings[TEAM] = team #update team
-    upload_to_s3(settings, settings_key, s3_client)
-    response = get_translation(lang, f'{CONFIGURATION}.team_pool')(team)
-    return response
-
 def toggle_dice(message, _lang):
     settings_key = get_settings_path(message)
     s3_client = get_s3_client()
@@ -270,9 +223,5 @@ settings_dict = {
   "update_teamname": lambda msg, _lang: update_teamname(msg),
   "create_settings": lambda msg, _lang: create_settings(msg),
   "delete_settings": lambda msg, _lang: delete_settings(msg),
-  "add_team": lambda msg, _lang: add_team(msg, _lang, 'increase'),
-  "spend_team": lambda msg, _lang: add_team(msg, _lang, 'decrease'),
-  "check_team": lambda msg, _lang: add_team(msg, _lang, 'check'),
-  "empty_team": lambda msg, _lang: add_team(msg, _lang, 'empty'),
   "toggle_dice": lambda msg, _lang: toggle_dice(msg, _lang)
 }
