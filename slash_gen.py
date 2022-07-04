@@ -14,7 +14,6 @@ def parse_file(data_file):
     # We probably won't use this one.
     sources = data['sources']
 
-    adult = {"id": 99, "name":'adult'}
     basic = {"id": 98, "name":'basic'}
 
     #Add basic and adult moves
@@ -102,9 +101,9 @@ def main(data_file, out_file):
     out_file.write(generate_code(top_commands))
 
 
-parser = argparse.ArgumentParser(description='Generate Slash Command code from a given Masks data file.')
+parser = argparse.ArgumentParser(description='Generate Slash Command code from a given TSL data file.')
 parser.add_argument('--data-file', type=open, default="language_files/en.json",
-                    help='Source Masks data file'
+                    help='Source TSL data file'
                     )
 parser.add_argument('dest_file', type=argparse.FileType('w', encoding='utf-8'),
                     help='Destination file for generated code'
