@@ -1,11 +1,9 @@
 from en_dict import get_en_dict
-from es_dict import get_es_dict
 
-LANG_LIST = ['en', 'es']
+LANG_LIST = ['en']
 
 lang_dicts = {
   "en": get_en_dict(),
-  "es": get_es_dict()
 }
 
 
